@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Viraj Agrawal | Portfolio</title>
+
+  <!-- Pico CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  />
+
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 100vh;
+    }
+
+    aside {
+      border-right: 1px solid var(--pico-muted-border-color);
+      padding: 1.5rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .sidebar-title {
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 992px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: var(--pico-background-color);
+        z-index: 999;
+      }
+
+      aside.active {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <h3 class="sidebar-title">Viraj Agrawal</h3>
+
+    <nav>
+      <ul>
+        <li><a href="#about" onclick="closeSidebar()">About</a></li>
+        <li><a href="#skills" onclick="closeSidebar()">Skills</a></li>
+        <li><a href="#projects" onclick="closeSidebar()">Projects</a></li>
+        <li><a href="#contact" onclick="closeSidebar()">Contact</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <small>
+      Computer Science Undergraduate<br />
+      AI Enthusiast<br /><br />
+      <a href="https://www.linkedin.com/in/viraj-agrawal-85bb76298/" target="_blank">
+        LinkedIn
+      </a>
+    </small>
+  </aside>
+
+  <!-- Content -->
+  <div>
+
+    <!-- Top Navigation -->
+    <nav class="container-fluid">
+      <ul>
+        <li>
+          <button class="secondary" onclick="toggleSidebar()">☰</button>
+        </li>
+        <li><strong>Portfolio</strong></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/viraj-agrawal-85bb76298/" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+      <!-- Hero -->
+      <section>
+        <hgroup>
+          <h1>Hi, I’m Viraj Agrawal 👋</h1>
+          <h2>Computer Science Undergraduate • AI Enthusiast</h2>
+        </hgroup>
+
+        <p>
+          I am a Computer Science student at <strong>IET Lucknow</strong>, specializing
+          in <strong>Artificial Intelligence</strong>. I enjoy learning how intelligent
+          systems work and applying technology to real-world problems.
+        </p>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am pursuing my undergraduate degree in Computer Science at the Institute of
+          Engineering and Technology (IET), Lucknow. My academic focus lies in Artificial
+          Intelligence and Machine Learning.
+        </p>
+        <p>
+          I actively work on strengthening my foundations in programming, data
+          structures, and algorithms while exploring AI-driven solutions.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="grid">
+          <article>
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>C / C++</li>
+              <li>JavaScript (Basics)</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>AI & ML</h3>
+            <ul>
+              <li>Machine Learning Fundamentals</li>
+              <li>Artificial Intelligence Concepts</li>
+              <li>Data Analysis Basics</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>HTML & CSS</li>
+              <li>Linux / CLI</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article>
+          <h3>AI / ML Learning Projects</h3>
+          <p>
+            Academic and self-learning projects focused on machine learning concepts,
+            data preprocessing, and model evaluation.
+          </p>
+          <p><strong>Tech:</strong> Python, NumPy, Pandas, Scikit-learn</p>
+        </article>
+
+        <article>
+          <h3>CS Practice Programs</h3>
+          <p>
+            Implementations of core computer science concepts including data structures
+            and algorithms.
+          </p>
+          <p><strong>Tech:</strong> C++, Python</p>
+        </article>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Open to learning opportunities, collaborations, and technical discussions.
+        </p>
+
+        <ul>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/viraj-agrawal-85bb76298/" target="_blank">
+              viraj-agrawal
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <small>© 2026 Viraj Agrawal • Built with Pico.css</small>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Sidebar Script -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+
+    function closeSidebar() {
+      document.getElementById("sidebar").classList.remove("active");
+    }
+  </script>
+
+</body>
+</html>
