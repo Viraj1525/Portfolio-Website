@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 export default function Hero() {
@@ -108,112 +109,148 @@ export default function Hero() {
       </svg>
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
-        <div style={{ maxWidth: 800 }}>
-          <span
-            className="hand animate-fade-up"
-            style={{
-              fontSize: "1.3rem",
-              color: "var(--teal)",
-              fontWeight: 600,
-              display: "block",
-              marginBottom: "1rem",
-            }}
-          >
-            Hello, I&apos;m
-          </span>
-
-          <h1
-            className="doodle-underline animate-fade-up delay-100"
-            style={{
-              fontFamily: "var(--font-hand)",
-              fontSize: "clamp(3.5rem, 9vw, 7rem)",
-              fontWeight: 700,
-              lineHeight: 1.05,
-              marginBottom: "1.75rem",
-              color: "var(--ink)",
-            }}
-          >
-            Viraj Agrawal
-          </h1>
-
-          <p
-            className="animate-fade-up delay-200"
-            style={{
-              fontSize: "clamp(1.1rem, 2.2vw, 1.35rem)",
-              maxWidth: 560,
-              lineHeight: 1.7,
-              color: "var(--ink-muted)",
-              marginBottom: "2.5rem",
-              fontWeight: 400,
-            }}
-          >
-            Designing AI systems that move beyond prototypes
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "2rem",
+            alignItems: "center",
+          }}
+        >
+          <div style={{ maxWidth: 800 }}>
             <span
+              className="hand animate-fade-up"
               style={{
-                fontFamily: "var(--font-hand)",
-                color: "var(--coral)",
-                fontWeight: 700,
-                fontSize: "1.1em",
+                fontSize: "1.3rem",
+                color: "var(--teal)",
+                fontWeight: 600,
+                display: "block",
+                marginBottom: "1rem",
               }}
             >
-              {" "}
-              toward real-world utility.
+              Hello, I&apos;m
             </span>
-          </p>
 
-          <div
-            className="animate-fade-up delay-300"
-            style={{ display: "flex", alignItems: "center", gap: "1.5rem", flexWrap: "wrap" }}
-          >
-            <svg
-              width="48"
-              height="32"
-              viewBox="0 0 48 32"
-              style={{ position: "relative", top: 4, opacity: 0.7 }}
+            <h1
+              className="doodle-underline animate-fade-up delay-100"
+              style={{
+                fontFamily: "var(--font-hand)",
+                fontSize: "clamp(3.5rem, 9vw, 7rem)",
+                fontWeight: 700,
+                lineHeight: 1.05,
+                marginBottom: "1.75rem",
+                color: "var(--ink)",
+              }}
             >
-              <path
-                d="M2,26 C10,10 28,8 40,14 L36,10 M40,14 L36,18"
-                stroke="var(--ink)"
-                strokeWidth="2.5"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+              Viraj Agrawal
+            </h1>
 
-            <a href="#projects" className="btn-primary" id="hero-see-work">
-              See My Work -&gt;
-            </a>
-            <a href="#contact" className="btn-secondary" id="hero-contact">
-              Get In Touch
-            </a>
-          </div>
-
-          <div
-            className="animate-fade-up delay-500"
-            style={{ display: "flex", gap: "1rem", marginTop: "3.5rem", flexWrap: "wrap" }}
-          >
-            {[
-              { label: "AI Engineering", color: "var(--coral-light)", border: "var(--coral)" },
-              { label: "Backend Systems", color: "var(--teal-light)", border: "var(--teal)" },
-              { label: "Full-Stack Dev", color: "var(--indigo-light)", border: "var(--indigo)" },
-            ].map((b) => (
-              <div
-                key={b.label}
+            <p
+              className="animate-fade-up delay-200"
+              style={{
+                fontSize: "clamp(1.1rem, 2.2vw, 1.35rem)",
+                maxWidth: 560,
+                lineHeight: 1.7,
+                color: "var(--ink-muted)",
+                marginBottom: "2.5rem",
+                fontWeight: 400,
+              }}
+            >
+              Designing AI systems that move beyond prototypes
+              <span
                 style={{
-                  padding: "0.45rem 1.1rem",
-                  background: b.color,
-                  border: `2px solid ${b.border}`,
-                  borderRadius: "var(--radius-sketch)",
                   fontFamily: "var(--font-hand)",
-                  fontSize: "1rem",
-                  fontWeight: 600,
-                  color: "var(--ink)",
+                  color: "var(--coral)",
+                  fontWeight: 700,
+                  fontSize: "1.1em",
                 }}
               >
-                {b.label}
-              </div>
-            ))}
+                {" "}
+                toward real-world utility.
+              </span>
+            </p>
+
+            <div
+              className="animate-fade-up delay-300"
+              style={{ display: "flex", alignItems: "center", gap: "1.5rem", flexWrap: "wrap" }}
+            >
+              <svg
+                width="48"
+                height="32"
+                viewBox="0 0 48 32"
+                style={{ position: "relative", top: 4, opacity: 0.7 }}
+              >
+                <path
+                  d="M2,26 C10,10 28,8 40,14 L36,10 M40,14 L36,18"
+                  stroke="var(--ink)"
+                  strokeWidth="2.5"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+
+              <a href="#projects" className="btn-primary" id="hero-see-work">
+                See My Work -&gt;
+              </a>
+              <a href="#contact" className="btn-secondary" id="hero-contact">
+                Get In Touch
+              </a>
+            </div>
+
+            <div
+              className="animate-fade-up delay-500"
+              style={{ display: "flex", gap: "1rem", marginTop: "3.5rem", flexWrap: "wrap" }}
+            >
+              {[
+                { label: "AI Engineering", color: "var(--coral-light)", border: "var(--coral)" },
+                { label: "Backend Systems", color: "var(--teal-light)", border: "var(--teal)" },
+                { label: "Full-Stack Dev", color: "var(--indigo-light)", border: "var(--indigo)" },
+              ].map((b) => (
+                <div
+                  key={b.label}
+                  style={{
+                    padding: "0.45rem 1.1rem",
+                    background: b.color,
+                    border: `2px solid ${b.border}`,
+                    borderRadius: "var(--radius-sketch)",
+                    fontFamily: "var(--font-hand)",
+                    fontSize: "1rem",
+                    fontWeight: 600,
+                    color: "var(--ink)",
+                  }}
+                >
+                  {b.label}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="animate-fade-up delay-200" style={{ justifySelf: "center", width: "100%", maxWidth: 360 }}>
+            <div
+              style={{
+                border: "3px solid var(--ink)",
+                borderRadius: "var(--radius-sketch)",
+                background: "var(--surface)",
+                padding: "0.65rem",
+                boxShadow: "8px 10px 0 rgba(45,53,97,0.2)",
+                transform: "rotate(1.4deg)",
+              }}
+            >
+              <Image
+                src="/viraj-profile.jpeg"
+                alt="Portrait of Viraj Agrawal"
+                width={1280}
+                height={1280}
+                priority
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "calc(var(--radius-sketch) - 4px)",
+                  display: "block",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

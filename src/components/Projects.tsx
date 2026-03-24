@@ -17,6 +17,7 @@ const projects = [
       { label: "React", bg: "var(--indigo-light)", color: "var(--indigo)" },
       { label: "RAG", bg: "var(--yellow)", color: "var(--ink)" },
     ],
+    githubUrl: "https://github.com/Viraj1525/Med_Bot",
     rotation: "-1.2deg",
     accentColor: "var(--coral)",
   },
@@ -38,6 +39,7 @@ const projects = [
       { label: "Python", bg: "var(--indigo-light)", color: "var(--indigo)" },
       { label: "LLM APIs", bg: "var(--yellow)", color: "var(--ink)" },
     ],
+    githubUrl: "https://github.com/Viraj1525/AI-Compliance-Risk-Intelligence-Platform",
     rotation: "1deg",
     accentColor: "var(--teal)",
   },
@@ -181,6 +183,18 @@ export default function Projects() {
                   </li>
                 ))}
               </ul>
+
+              <div style={{ marginBottom: "1rem" }}>
+                <a
+                  href={p.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-secondary"
+                  style={{ display: "inline-block" }}
+                >
+                  GitHub Repo
+                </a>
+              </div>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
                 {p.tags.map((t) => (
