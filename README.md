@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Viraj Agrawal Portfolio
 
-## Getting Started
+Designing AI systems that move beyond prototypes toward real-world utility.
 
-First, run the development server:
+## Profile
+
+Computer Science student focused on AI systems, backend architecture, and scalable applications.
+
+Core interests:
+- Thoughtful LLM integration (not AI for AI's sake)
+- Solving high-friction real-world problems
+- Architectures that scale from prototype to production
+
+## Core Focus
+
+- AI Engineering: RAG pipelines, LLM integration, intelligent workflows
+- Backend Systems: API design, data flow, scalability
+- Full-Stack Development: end-to-end product delivery
+
+## Tech Stack
+
+- Languages: C++, Python, JavaScript, TypeScript
+- Frontend: React, Next.js, Tailwind CSS
+- Backend: FastAPI, Node.js
+- AI/ML: LangChain, RAG pipelines, vector databases, LLM APIs
+- Infra & Tools: Docker, Git, Vercel
+
+## Selected Work
+
+### MedBot
+
+AI-powered medical assistant focused on accessibility and usability.
+
+### AI Compliance & Risk Intelligence Platform
+
+RAG-based system for enterprise document analysis and compliance risk detection.
+
+## Engineering Principles
+
+- Start with problem clarity, not tools
+- Prefer simple architectures that scale
+- Treat AI as one component in a system
+- Build with production intent from day one
+
+## Local Setup
 
 ```bash
+git clone https://github.com/Viraj1525/portfolio.git
+cd portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Optimized for Vercel deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: https://github.com/Viraj1525
+- LinkedIn: https://www.linkedin.com/in/viraj-agrawal-85bb76298
+- Email: virajagrawal.1525@gmail.com
