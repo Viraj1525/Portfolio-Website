@@ -43,15 +43,7 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      style={{
-        background: "var(--ink)",
-        color: "var(--bg)",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
+    <section id="contact" style={{ background: "var(--ink)", color: "var(--bg)", position: "relative", overflow: "hidden" }}>
       <div
         style={{
           position: "absolute",
@@ -63,120 +55,34 @@ export default function Contact() {
         }}
       />
 
-      <span
-        style={{
-          position: "absolute",
-          top: "15%",
-          right: "6%",
-          fontFamily: "var(--font-hand)",
-          fontSize: "2rem",
-          color: "var(--yellow)",
-          opacity: 0.5,
-          userSelect: "none",
-        }}
-        className="animate-float"
-      >
+      <span style={{ position: "absolute", top: "15%", right: "6%", fontFamily: "var(--font-hand)", fontSize: "2rem", color: "var(--yellow)", opacity: 0.5, userSelect: "none" }} className="animate-float">
         *
       </span>
-      <span
-        style={{
-          position: "absolute",
-          bottom: "20%",
-          left: "5%",
-          fontFamily: "var(--font-hand)",
-          fontSize: "1.4rem",
-          color: "var(--coral)",
-          opacity: 0.5,
-          userSelect: "none",
-        }}
-        className="animate-float"
-      >
+      <span style={{ position: "absolute", bottom: "20%", left: "5%", fontFamily: "var(--font-hand)", fontSize: "1.4rem", color: "var(--coral)", opacity: 0.5, userSelect: "none" }} className="animate-float">
         x
       </span>
-      <div
-        style={{
-          position: "absolute",
-          top: "40%",
-          right: "15%",
-          width: 80,
-          height: 80,
-          borderRadius: "50%",
-          border: "2.5px dashed var(--teal)",
-          opacity: 0.2,
-        }}
-      />
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-          <span
-            style={{
-              fontFamily: "var(--font-hand)",
-              fontSize: "1.1rem",
-              fontWeight: 600,
-              color: "var(--teal)",
-              display: "block",
-              marginBottom: "0.5rem",
-              letterSpacing: "0.04em",
-            }}
-          >
+          <span style={{ fontFamily: "var(--font-hand)", fontSize: "1.1rem", fontWeight: 600, color: "var(--teal)", display: "block", marginBottom: "0.5rem", letterSpacing: "0.04em" }}>
             contact
           </span>
-          <h2
-            style={{
-              fontFamily: "var(--font-hand)",
-              fontSize: "clamp(2.2rem, 5vw, 3.5rem)",
-              fontWeight: 700,
-              color: "var(--bg)",
-              lineHeight: 1.15,
-              display: "inline-block",
-              position: "relative",
-              marginBottom: "1rem",
-            }}
-          >
-            Let&apos;s Build Something
-            <svg
-              style={{ position: "absolute", bottom: -10, left: 0, width: "100%" }}
-              viewBox="0 0 300 10"
-              preserveAspectRatio="none"
-              height="10"
-            >
-              <path
-                d="M0,5 C60,1 120,9 180,4 C240,0 275,8 300,5"
-                stroke="var(--coral)"
-                strokeWidth="3.5"
-                fill="none"
-                strokeLinecap="round"
-              />
-            </svg>
+          <h2 style={{ fontFamily: "var(--font-hand)", fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: 700, color: "var(--bg)", lineHeight: 1.15, marginBottom: "1rem" }}>
+            Let&apos;s Build Something Useful
           </h2>
-          <p
-            style={{
-              color: "rgba(250,250,247,0.55)",
-              maxWidth: 440,
-              margin: "1.5rem auto 0",
-              lineHeight: 1.7,
-            }}
-          >
-            Currently open to internship opportunities and collaborations on
-            backend-heavy AI projects.
+          <p style={{ color: "rgba(250,250,247,0.55)", maxWidth: 560, margin: "1.5rem auto 0", lineHeight: 1.7 }}>
+            Open to internships, project collaborations, and AI/backend opportunities. Based in Lucknow, Uttar Pradesh.
           </p>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: "1.25rem",
-            marginBottom: "3rem",
-          }}
-        >
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.25rem", marginBottom: "3rem" }}>
           {contacts.map((c) => (
             <a
               key={c.id}
               id={c.id}
               href={c.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={c.href.startsWith("http") ? "_blank" : undefined}
+              rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
               className="contact-card"
               style={{
                 display: "flex",
@@ -191,71 +97,21 @@ export default function Contact() {
                 textDecoration: "none",
               }}
             >
-              <div
-                style={{
-                  width: 52,
-                  height: 52,
-                  borderRadius: "50%",
-                  background: c.bg,
-                  color: c.color,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexShrink: 0,
-                }}
-              >
+              <div style={{ width: 52, height: 52, borderRadius: "50%", background: c.bg, color: c.color, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                 {c.icon}
               </div>
               <div>
-                <p
-                  style={{
-                    fontFamily: "var(--font-hand)",
-                    fontWeight: 700,
-                    fontSize: "1.2rem",
-                    color: "var(--bg)",
-                    margin: 0,
-                  }}
-                >
-                  {c.label}
-                </p>
-                <p
-                  style={{
-                    fontSize: "0.85rem",
-                    color: "rgba(250,250,247,0.5)",
-                    margin: 0,
-                    fontFamily: "var(--font-body)",
-                  }}
-                >
-                  {c.value}
-                </p>
+                <p style={{ fontFamily: "var(--font-hand)", fontWeight: 700, fontSize: "1.2rem", color: "var(--bg)", margin: 0 }}>{c.label}</p>
+                <p style={{ fontSize: "0.85rem", color: "rgba(250,250,247,0.5)", margin: 0, fontFamily: "var(--font-body)" }}>{c.value}</p>
               </div>
             </a>
           ))}
         </div>
 
-        <div
-          style={{
-            textAlign: "center",
-            padding: "2rem",
-            borderTop: "2px dashed rgba(250,250,247,0.12)",
-          }}
-        >
-          <p
-            style={{
-              fontFamily: "var(--font-hand)",
-              fontSize: "1.1rem",
-              color: "rgba(250,250,247,0.5)",
-              marginBottom: "0.5rem",
-            }}
-          >
-            Currently building toward -&gt;
-          </p>
+        <div style={{ textAlign: "center", padding: "2rem", borderTop: "2px dashed rgba(250,250,247,0.12)" }}>
+          <p style={{ fontFamily: "var(--font-hand)", fontSize: "1.1rem", color: "rgba(250,250,247,0.5)", marginBottom: "0.5rem" }}>Currently focusing on -&gt;</p>
           <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "0.75rem" }}>
-            {[
-              "AI systems for enterprise",
-              "LLMs + structured data + workflows",
-              "Decision intelligence tools",
-            ].map((d) => (
+            {["AI compliance systems", "Medical RAG assistants", "Production-grade FastAPI services"].map((d) => (
               <span
                 key={d}
                 style={{

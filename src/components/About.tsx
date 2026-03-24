@@ -1,70 +1,67 @@
 export default function About() {
   const focuses = [
     {
-      icon: "AI",
-      title: "AI Engineering",
-      desc: "RAG pipelines, LLM integration, and intelligent workflows built with production intent.",
+      icon: "RAG",
+      title: "AI Systems",
+      desc: "Developing retrieval-augmented workflows with LLMs, semantic search, and practical guardrails.",
       bg: "var(--coral-light)",
       border: "var(--coral)",
     },
     {
       icon: "API",
-      title: "Backend Systems",
-      desc: "API design, data flow, and scalable architectures that can move from prototype to production.",
+      title: "Backend Engineering",
+      desc: "Designing FastAPI services, REST APIs, data pipelines, and scalable document-processing backends.",
       bg: "var(--teal-light)",
       border: "var(--teal)",
     },
     {
-      icon: "FS",
-      title: "Full-Stack Dev",
-      desc: "Delivering complete, usable products from database to polished UI.",
+      icon: "LEAD",
+      title: "Team Leadership",
+      desc: "Experienced in mentoring, event operations, and cross-functional coordination with measurable outcomes.",
       bg: "var(--indigo-light)",
       border: "var(--indigo)",
     },
   ];
 
   return (
-    <section
-      id="about"
-      style={{ background: "var(--surface)", paddingTop: "5rem", paddingBottom: "6rem" }}
-    >
+    <section id="about" style={{ background: "var(--surface)", paddingTop: "5rem", paddingBottom: "6rem" }}>
       <div className="container">
         <div className="about-grid" style={{ display: "grid", gap: "4rem", alignItems: "center" }}>
           <div>
             <span className="section-label animate-fade-up">profile</span>
-            <h2
-              className="doodle-underline-teal animate-fade-up delay-100"
-              style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", marginBottom: "1.5rem" }}
-            >
-              The Architect&apos;s Log
+            <h2 className="doodle-underline-teal animate-fade-up delay-100" style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", marginBottom: "1.5rem" }}>
+              Engineer in Training, Builder by Habit
             </h2>
-            <p
-              className="animate-fade-up delay-200"
-              style={{ fontSize: "1.05rem", maxWidth: 440, marginBottom: "1.25rem" }}
-            >
-              CS student focused on AI systems, backend architecture, and scalable
-              applications that solve actual human problems.
+            <p className="animate-fade-up delay-200" style={{ fontSize: "1.05rem", maxWidth: 530, marginBottom: "1rem" }}>
+              I&apos;m a Computer Science undergrad at Institute of Engineering and Technology, Lucknow, focused on AI-driven
+              products that blend strong backend systems with clean user experience.
             </p>
-            <p
-              className="animate-fade-up delay-300"
-              style={{ fontSize: "1.05rem", maxWidth: 440, marginBottom: "2rem" }}
-            >
-              My work lives at the intersection of mathematical rigor and creative
-              engineering where systems have to be{" "}
-              <span
-                style={{
-                  fontFamily: "var(--font-hand)",
-                  fontWeight: 700,
-                  color: "var(--teal)",
-                  fontSize: "1.1em",
-                }}
-              >
-                both smart and useful.
-              </span>
+            <p className="animate-fade-up delay-300" style={{ fontSize: "1.05rem", maxWidth: 530, marginBottom: "1.5rem" }}>
+              Current academic profile: <strong>CGPA 8.0/10</strong>. Outside coursework, I spend most of my time building
+              applied AI projects, mentoring students, and leading operations for high-impact events.
             </p>
 
+            <div className="animate-fade-up delay-400" style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginBottom: "2rem" }}>
+              {["Lucknow, Uttar Pradesh", "B.Tech (Oct 2023 - Present)", "Generative AI + Full Stack"].map((pill) => (
+                <span
+                  key={pill}
+                  style={{
+                    background: "var(--yellow)",
+                    border: "1.5px solid var(--yellow-dark)",
+                    borderRadius: 99,
+                    padding: "0.3rem 0.8rem",
+                    fontSize: "0.82rem",
+                    color: "var(--ink)",
+                    fontWeight: 600,
+                  }}
+                >
+                  {pill}
+                </span>
+              ))}
+            </div>
+
             <div
-              className="animate-fade-up delay-400"
+              className="animate-fade-up delay-500"
               style={{
                 display: "inline-flex",
                 alignItems: "flex-start",
@@ -74,20 +71,12 @@ export default function About() {
                 border: "2px solid var(--yellow-dark)",
                 borderRadius: "4px 16px 4px 16px",
                 boxShadow: "3px 3px 0 var(--yellow-dark)",
-                maxWidth: 360,
+                maxWidth: 420,
               }}
             >
               <span style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--ink)" }}>NOTE</span>
-              <p
-                style={{
-                  fontFamily: "var(--font-hand)",
-                  fontSize: "1.05rem",
-                  fontWeight: 600,
-                  color: "var(--ink)",
-                  margin: 0,
-                }}
-              >
-                Good projects demonstrate skill. Useful systems demonstrate judgment.
+              <p style={{ fontFamily: "var(--font-hand)", fontSize: "1.05rem", fontWeight: 600, color: "var(--ink)", margin: 0 }}>
+                I care about systems that perform well in real workflows, not just demo environments.
               </p>
             </div>
           </div>
@@ -108,10 +97,7 @@ export default function About() {
                   padding: "1.25rem 1.5rem",
                 }}
               >
-                <div
-                  className="focus-icon"
-                  style={{ borderColor: f.border, background: "rgba(255,255,255,0.6)", flexShrink: 0 }}
-                >
+                <div className="focus-icon" style={{ borderColor: f.border, background: "rgba(255,255,255,0.6)", flexShrink: 0 }}>
                   {f.icon}
                 </div>
                 <div>

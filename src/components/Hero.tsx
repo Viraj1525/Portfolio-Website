@@ -50,63 +50,22 @@ export default function Hero() {
         }}
       />
 
-      <span
-        className="doodle-star parallax-doodle animate-float"
-        data-speed="1.4"
-        style={{ top: "18%", left: "8%", fontSize: "2rem", animationDelay: "0s" }}
-      >
+      <span className="doodle-star parallax-doodle animate-float" data-speed="1.4" style={{ top: "18%", left: "8%", fontSize: "2rem", animationDelay: "0s" }}>
         *
       </span>
-      <span
-        className="doodle-star parallax-doodle animate-float"
-        data-speed="0.8"
-        style={{ top: "30%", right: "10%", fontSize: "1.4rem", animationDelay: "1.2s" }}
-      >
+      <span className="doodle-star parallax-doodle animate-float" data-speed="0.8" style={{ top: "30%", right: "10%", fontSize: "1.4rem", animationDelay: "1.2s" }}>
         +
       </span>
-      <span
-        className="doodle-x parallax-doodle animate-float"
-        data-speed="1.2"
-        style={{ top: "65%", left: "6%", animationDelay: "0.6s" }}
-      >
+      <span className="doodle-x parallax-doodle animate-float" data-speed="1.2" style={{ top: "65%", left: "6%", animationDelay: "0.6s" }}>
         x
       </span>
-      <span
-        className="doodle-x parallax-doodle animate-float"
-        data-speed="0.9"
-        style={{ top: "20%", right: "20%", animationDelay: "2s" }}
-      >
+      <span className="doodle-x parallax-doodle animate-float" data-speed="0.9" style={{ top: "20%", right: "20%", animationDelay: "2s" }}>
         x
       </span>
-      <div
-        className="doodle-dot parallax-doodle animate-float"
-        data-speed="1.6"
-        style={{ top: "55%", right: "8%", width: 18, height: 18, animationDelay: "0.3s" }}
-      />
-      <div
-        className="doodle-dot parallax-doodle animate-float"
-        data-speed="1.1"
-        style={{ top: "78%", left: "15%", background: "var(--coral)", animationDelay: "1.8s" }}
-      />
-      <div
-        className="doodle-circle parallax-doodle"
-        data-speed="0.6"
-        style={{ width: 120, height: 120, top: "10%", right: "6%", borderColor: "var(--coral)", opacity: 0.2 }}
-      />
-      <div
-        className="doodle-circle parallax-doodle"
-        data-speed="1.3"
-        style={{ width: 70, height: 70, bottom: "20%", left: "10%", opacity: 0.25 }}
-      />
-
-      <svg
-        style={{ position: "absolute", bottom: "12%", right: "5%", opacity: 0.15, pointerEvents: "none" }}
-        width="200"
-        height="40"
-        viewBox="0 0 200 40"
-      >
-        <path d="M0,20 C40,5 80,35 120,20 C160,5 180,30 200,20" stroke="var(--teal)" strokeWidth="6" fill="none" strokeLinecap="round" />
-      </svg>
+      <div className="doodle-dot parallax-doodle animate-float" data-speed="1.6" style={{ top: "55%", right: "8%", width: 18, height: 18, animationDelay: "0.3s" }} />
+      <div className="doodle-dot parallax-doodle animate-float" data-speed="1.1" style={{ top: "78%", left: "15%", background: "var(--coral)", animationDelay: "1.8s" }} />
+      <div className="doodle-circle parallax-doodle" data-speed="0.6" style={{ width: 120, height: 120, top: "10%", right: "6%", borderColor: "var(--coral)", opacity: 0.2 }} />
+      <div className="doodle-circle parallax-doodle" data-speed="1.3" style={{ width: 70, height: 70, bottom: "20%", left: "10%", opacity: 0.25 }} />
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div
@@ -118,16 +77,7 @@ export default function Hero() {
           }}
         >
           <div style={{ maxWidth: 800 }}>
-            <span
-              className="hand animate-fade-up"
-              style={{
-                fontSize: "1.3rem",
-                color: "var(--teal)",
-                fontWeight: 600,
-                display: "block",
-                marginBottom: "1rem",
-              }}
-            >
+            <span className="hand animate-fade-up" style={{ fontSize: "1.3rem", color: "var(--teal)", fontWeight: 600, display: "block", marginBottom: "1rem" }}>
               Hello, I&apos;m
             </span>
 
@@ -135,82 +85,57 @@ export default function Hero() {
               className="doodle-underline animate-fade-up delay-100"
               style={{
                 fontFamily: "var(--font-hand)",
-                fontSize: "clamp(3.5rem, 9vw, 7rem)",
+                fontSize: "clamp(3.2rem, 9vw, 6.8rem)",
                 fontWeight: 700,
                 lineHeight: 1.05,
-                marginBottom: "1.75rem",
+                marginBottom: "1.2rem",
                 color: "var(--ink)",
               }}
             >
               Viraj Agrawal
             </h1>
 
+            <p className="animate-fade-up delay-200" style={{ color: "var(--ink)", marginBottom: "0.6rem", fontWeight: 600 }}>
+              B.Tech CSE (CGPA 8.0) | IET Lucknow
+            </p>
+
             <p
               className="animate-fade-up delay-200"
               style={{
-                fontSize: "clamp(1.1rem, 2.2vw, 1.35rem)",
-                maxWidth: 560,
+                fontSize: "clamp(1.05rem, 2.1vw, 1.25rem)",
+                maxWidth: 620,
                 lineHeight: 1.7,
                 color: "var(--ink-muted)",
-                marginBottom: "2.5rem",
+                marginBottom: "2rem",
                 fontWeight: 400,
               }}
             >
-              Designing AI systems that move beyond prototypes
-              <span
-                style={{
-                  fontFamily: "var(--font-hand)",
-                  color: "var(--coral)",
-                  fontWeight: 700,
-                  fontSize: "1.1em",
-                }}
-              >
+              Building practical AI systems with
+              <span style={{ fontFamily: "var(--font-hand)", color: "var(--coral)", fontWeight: 700, fontSize: "1.1em" }}>
                 {" "}
-                toward real-world utility.
+                RAG, LLM pipelines, and full-stack engineering.
               </span>
             </p>
 
-            <div
-              className="animate-fade-up delay-300"
-              style={{ display: "flex", alignItems: "center", gap: "1.5rem", flexWrap: "wrap" }}
-            >
-              <svg
-                width="48"
-                height="32"
-                viewBox="0 0 48 32"
-                style={{ position: "relative", top: 4, opacity: 0.7 }}
-              >
-                <path
-                  d="M2,26 C10,10 28,8 40,14 L36,10 M40,14 L36,18"
-                  stroke="var(--ink)"
-                  strokeWidth="2.5"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-
+            <div className="animate-fade-up delay-300" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               <a href="#projects" className="btn-primary" id="hero-see-work">
-                See My Work -&gt;
+                See Projects -&gt;
               </a>
-              <a href="#contact" className="btn-secondary" id="hero-contact">
-                Get In Touch
+              <a href="#experience" className="btn-secondary" id="hero-experience">
+                View Experience
               </a>
             </div>
 
-            <div
-              className="animate-fade-up delay-500"
-              style={{ display: "flex", gap: "1rem", marginTop: "3.5rem", flexWrap: "wrap" }}
-            >
+            <div className="animate-fade-up delay-500" style={{ display: "flex", gap: "0.65rem", marginTop: "2rem", flexWrap: "wrap" }}>
               {[
-                { label: "AI Engineering", color: "var(--coral-light)", border: "var(--coral)" },
-                { label: "Backend Systems", color: "var(--teal-light)", border: "var(--teal)" },
-                { label: "Full-Stack Dev", color: "var(--indigo-light)", border: "var(--indigo)" },
+                { label: "Generative AI", color: "var(--coral-light)", border: "var(--coral)" },
+                { label: "FastAPI + REST", color: "var(--teal-light)", border: "var(--teal)" },
+                { label: "LangChain + RAG", color: "var(--indigo-light)", border: "var(--indigo)" },
               ].map((b) => (
                 <div
                   key={b.label}
                   style={{
-                    padding: "0.45rem 1.1rem",
+                    padding: "0.4rem 1rem",
                     background: b.color,
                     border: `2px solid ${b.border}`,
                     borderRadius: "var(--radius-sketch)",
@@ -263,3 +188,6 @@ export default function Hero() {
     </section>
   );
 }
+
+
+

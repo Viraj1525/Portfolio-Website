@@ -1,95 +1,94 @@
 const projects = [
   {
-    id: "medbot",
-    badge: "MED",
-    title: "MedBot",
-    subtitle: "AI-Powered Medical Assistant",
+    id: "compliance-ai",
+    badge: "MAR 2026",
+    title: "AI Compliance & Risk Intelligence",
+    subtitle: "Full-Stack Regulatory Document Analysis Platform",
     description:
-      "Designed a conversational interface for accessible healthcare guidance. Integrated AI responses with a clean, responsive frontend with emphasis on usability in sensitive domains.",
+      "Built a full-stack compliance intelligence system that processes regulatory and policy documents, runs semantic retrieval, and generates AI-assisted risk insights for enterprise workflows.",
     highlights: [
-      "Conversational UI tailored for healthcare contexts",
-      "AI responses with safe, responsible guardrails",
-      "Clean, mobile-first responsive design",
+      "Implemented document ingestion, chunking, embeddings, and semantic retrieval with RAG.",
+      "Built compliance scoring and risk detection pipeline for multi-page policy PDFs.",
+      "Automated report generation to summarize non-compliance signals and action points.",
+    ],
+    tags: [
+      { label: "React", bg: "var(--coral-light)", color: "var(--coral)" },
+      { label: "FastAPI", bg: "var(--teal-light)", color: "#006A65" },
+      { label: "LangChain", bg: "var(--indigo-light)", color: "var(--indigo)" },
+      { label: "RAG", bg: "var(--yellow)", color: "var(--ink)" },
+    ],
+    githubUrl: "https://github.com/Viraj1525/AI-Compliance-Risk-Intelligence-Platform",
+    rotation: "1deg",
+    accentColor: "var(--teal)",
+  },
+  {
+    id: "medbot",
+    badge: "FEB 2026",
+    title: "Medical RAG Chatbot",
+    subtitle: "Context-Aware Healthcare Document Assistant",
+    description:
+      "Developed a medical GenAI chatbot to answer domain-specific questions from uploaded healthcare documents using retrieval-augmented generation and vector search.",
+    highlights: [
+      "Integrated PDF ingestion, chunking, embedding generation, and vector indexing.",
+      "Used LangChain + Groq LLM API + Pinecone for context-grounded responses.",
+      "Delivered an interactive Streamlit interface for practical medical document Q&A.",
     ],
     tags: [
       { label: "LangChain", bg: "var(--coral-light)", color: "var(--coral)" },
-      { label: "FastAPI", bg: "var(--teal-light)", color: "#006A65" },
-      { label: "React", bg: "var(--indigo-light)", color: "var(--indigo)" },
-      { label: "RAG", bg: "var(--yellow)", color: "var(--ink)" },
+      { label: "Groq API", bg: "var(--teal-light)", color: "#006A65" },
+      { label: "Pinecone", bg: "var(--indigo-light)", color: "var(--indigo)" },
+      { label: "Streamlit", bg: "var(--yellow)", color: "var(--ink)" },
     ],
     githubUrl: "https://github.com/Viraj1525/Med_Bot",
     rotation: "-1.2deg",
     accentColor: "var(--coral)",
   },
   {
-    id: "compliance-ai",
-    badge: "RISK",
-    title: "AI Compliance & Risk Intelligence",
-    subtitle: "Enterprise Document Analysis Platform",
+    id: "anpr",
+    badge: "MAR 2026",
+    title: "Number Plate Recognition (ANPR)",
+    subtitle: "YOLOv8 + OCR Vehicle Plate Pipeline",
     description:
-      "Built a RAG-based architecture for deep document understanding. Automated detection of potential policy and legal issues structured for enterprise-scale workflows.",
+      "Built an automatic number plate recognition system using computer vision and OCR with post-processing logic to improve extraction quality and output stability.",
     highlights: [
-      "RAG pipeline for intelligent document retrieval",
-      "Automated compliance and risk flag detection",
-      "Designed for enterprise-scale data volumes",
+      "Used YOLOv8 for plate detection and EasyOCR for optical text extraction.",
+      "Applied OpenCV preprocessing, adaptive thresholding, and regex-based validation.",
+      "Added character correction and temporal smoothing for cleaner structured outputs.",
     ],
     tags: [
-      { label: "RAG Pipeline", bg: "var(--coral-light)", color: "var(--coral)" },
-      { label: "Vector DB", bg: "var(--teal-light)", color: "#006A65" },
-      { label: "Python", bg: "var(--indigo-light)", color: "var(--indigo)" },
-      { label: "LLM APIs", bg: "var(--yellow)", color: "var(--ink)" },
+      { label: "YOLOv8", bg: "var(--coral-light)", color: "var(--coral)" },
+      { label: "EasyOCR", bg: "var(--teal-light)", color: "#006A65" },
+      { label: "OpenCV", bg: "var(--indigo-light)", color: "var(--indigo)" },
+      { label: "Computer Vision", bg: "var(--yellow)", color: "var(--ink)" },
     ],
-    githubUrl: "https://github.com/Viraj1525/AI-Compliance-Risk-Intelligence-Platform",
-    rotation: "1deg",
-    accentColor: "var(--teal)",
+    githubUrl: "https://github.com/Viraj1525/Number-Plate-Recognition",
+    rotation: "0.8deg",
+    accentColor: "var(--indigo)",
   },
 ];
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      style={{ background: "var(--surface)", position: "relative", overflow: "hidden" }}
-    >
-      <span
-        className="doodle-star animate-float"
-        style={{ top: "8%", left: "4%", fontSize: "1.6rem", position: "absolute", opacity: 0.5, animationDelay: "0.5s" }}
-      >
+    <section id="projects" style={{ background: "var(--bg)", position: "relative", overflow: "hidden" }}>
+      <span className="doodle-star animate-float" style={{ top: "8%", left: "4%", fontSize: "1.6rem", position: "absolute", opacity: 0.5, animationDelay: "0.5s" }}>
         *
       </span>
-      <div
-        className="doodle-dot"
-        style={{ top: "15%", right: "8%", width: 20, height: 20, background: "var(--yellow-dark)", position: "absolute", opacity: 0.4 }}
-      />
+      <div className="doodle-dot" style={{ top: "15%", right: "8%", width: 20, height: 20, background: "var(--yellow-dark)", position: "absolute", opacity: 0.4 }} />
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
           <span className="section-label">selected work</span>
-          <h2
-            className="doodle-underline"
-            style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", display: "inline-block" }}
-          >
-            Blueprints
+          <h2 className="doodle-underline" style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", display: "inline-block" }}>
+            Project Portfolio
           </h2>
-          <p style={{ marginTop: "1rem", maxWidth: 480, margin: "1rem auto 0" }}>
-            Selected architectural explorations where AI meets real-world constraints.
+          <p style={{ marginTop: "1rem", maxWidth: 560, margin: "1rem auto 0" }}>
+            Applied AI builds focused on document intelligence, health-tech assistance, and computer vision.
           </p>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "2rem",
-          }}
-        >
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem" }}>
           {projects.map((p) => (
-            <div
-              key={p.id}
-              id={`project-${p.id}`}
-              className="project-card animate-pop-in"
-              style={{ transform: `rotate(${p.rotation})` }}
-            >
+            <div key={p.id} id={`project-${p.id}`} className="project-card animate-pop-in" style={{ transform: `rotate(${p.rotation})` }}>
               <div
                 style={{
                   position: "absolute",
@@ -118,55 +117,16 @@ export default function Projects() {
                   {p.badge}
                 </span>
                 <div>
-                  <h3
-                    style={{
-                      fontFamily: "var(--font-hand)",
-                      fontSize: "1.5rem",
-                      fontWeight: 700,
-                      color: "var(--ink)",
-                      lineHeight: 1.2,
-                    }}
-                  >
-                    {p.title}
-                  </h3>
-                  <p
-                    style={{
-                      fontFamily: "var(--font-hand)",
-                      fontSize: "0.95rem",
-                      color: "var(--ink-muted)",
-                      margin: 0,
-                    }}
-                  >
-                    {p.subtitle}
-                  </p>
+                  <h3 style={{ fontFamily: "var(--font-hand)", fontSize: "1.45rem", fontWeight: 700, color: "var(--ink)", lineHeight: 1.2 }}>{p.title}</h3>
+                  <p style={{ fontFamily: "var(--font-hand)", fontSize: "0.95rem", color: "var(--ink-muted)", margin: 0 }}>{p.subtitle}</p>
                 </div>
               </div>
 
-              <p style={{ fontSize: "0.95rem", lineHeight: 1.65, marginBottom: "1.25rem" }}>
-                {p.description}
-              </p>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.65, marginBottom: "1.25rem" }}>{p.description}</p>
 
-              <ul
-                style={{
-                  listStyle: "none",
-                  padding: 0,
-                  margin: "0 0 1.5rem",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.5rem",
-                }}
-              >
+              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                 {p.highlights.map((h) => (
-                  <li
-                    key={h}
-                    style={{
-                      display: "flex",
-                      alignItems: "flex-start",
-                      gap: "0.6rem",
-                      fontSize: "0.9rem",
-                      color: "var(--ink-muted)",
-                    }}
-                  >
+                  <li key={h} style={{ display: "flex", alignItems: "flex-start", gap: "0.6rem", fontSize: "0.9rem", color: "var(--ink-muted)" }}>
                     <span
                       style={{
                         fontFamily: "var(--font-hand)",
@@ -185,13 +145,7 @@ export default function Projects() {
               </ul>
 
               <div style={{ marginBottom: "1rem" }}>
-                <a
-                  href={p.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-secondary"
-                  style={{ display: "inline-block" }}
-                >
+                <a href={p.githubUrl} target="_blank" rel="noreferrer" className="btn-secondary" style={{ display: "inline-block" }}>
                   GitHub Repo
                 </a>
               </div>
@@ -223,3 +177,4 @@ export default function Projects() {
     </section>
   );
 }
+
