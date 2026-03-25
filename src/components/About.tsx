@@ -37,7 +37,7 @@ export default function About() {
               products that blend strong backend systems with clean user experience.
             </p>
             <p className="animate-fade-up delay-300" style={{ fontSize: "1.05rem", maxWidth: 530, marginBottom: "1.5rem" }}>
-              Current academic profile: <strong>CGPA 8.0/10</strong>. Outside coursework, I spend most of my time building
+              Outside coursework, I spend most of my time building
               applied AI projects, mentoring students, and leading operations for high-impact events.
             </p>
 

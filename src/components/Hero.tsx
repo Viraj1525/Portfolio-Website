@@ -96,7 +96,7 @@ export default function Hero() {
             </h1>
 
             <p className="animate-fade-up delay-200" style={{ color: "var(--ink)", marginBottom: "0.6rem", fontWeight: 600 }}>
-              B.Tech CSE (CGPA 8.0) | IET Lucknow
+              B.Tech CSE | IET Lucknow
             </p>
 
             <p
