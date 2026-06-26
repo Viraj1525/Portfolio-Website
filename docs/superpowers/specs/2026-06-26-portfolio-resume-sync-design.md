@@ -14,9 +14,10 @@ Bring the portfolio site's project list, contact details, and "currently focusin
 
 In-scope:
 
-1. `src/components/Projects.tsx` — replace the `projects` array (currently 3 entries) with 4 entries drawn from the GitHub README content.
-2. `src/components/Contact.tsx` — drop the phone contact card; update the LinkedIn URL; refresh the "Currently focusing on" tags to match the new project mix.
-3. `src/components/Footer.tsx` — update the LinkedIn link to the new handle.
+1. `src/components/Projects.tsx` — replace the `projects` array (currently 3 entries) with 4 entries drawn from the GitHub README content. MedBot is dropped; Resilient AI Multi-Agent takes its place.
+2. `src/components/Experience.tsx` — replace the E-Cell Design Lead entry with the Novo Technologies AI & Full-Stack Intern entry from the resume. Other experience entries (Co-Grad, TEDx IET Lucknow) stay as-is.
+3. `src/components/Contact.tsx` — drop the phone contact card; update the LinkedIn URL; refresh the "Currently focusing on" tags to match the new project mix.
+4. `src/components/Footer.tsx` — update the LinkedIn link to the new handle.
 
 Out of scope:
 
@@ -122,11 +123,30 @@ The intro line below the section heading currently reads `Applied AI builds focu
 - Update the LinkedIn `href` from `https://www.linkedin.com/in/viraj-agrawal-85bb76298` to `https://www.linkedin.com/in/viraj-agrawal-25oct`.
 - GitHub and Email entries are unchanged.
 
+### 2. `src/components/Experience.tsx`
+
+Replace the third entry of the `experiences` array (currently E-Cell Design Lead) with the Novo Technologies entry below. Keep the first two entries (Co-Grad, TEDx IET Lucknow) and the certifications block unchanged.
+
+**Entry — Novo Technologies (replaces E-Cell)**
+
+- `id`: `novo`
+- `org`: `Novo Technologies`
+- `role`: `AI & Full-Stack Intern`
+- `duration`: `Feb 2025 - May 2025`
+- `location`: `Remote`
+- `accent`: `var(--indigo)`
+- `bg`: `var(--indigo-light)`
+- `points`:
+  - Contributed to AI-driven web features in a production-style team, shipping full-stack flows from API to UI.
+  - Built an AI-based mock interview platform using Next.js, integrating Gemini API with voice input and a resume-aware chat assistant.
+  - Developed an automated MCQ generator with FastAPI, Google Gemini, and Docker, deployed via a CI/CD pipeline for reliable releases.
+
+The `experiences` array remains 3 entries; no grid CSS change.
+
 ## Untouched components
 
 - `Hero.tsx` — tagline "Building practical AI systems with RAG, LLM pipelines, and full-stack engineering." still matches the resume and the project's actual nature.
 - `About.tsx` — `B.Tech (Oct 2023 - Present)`, `Lucknow, Uttar Pradesh`, focus cards all still match.
-- `Experience.tsx` — Co-Grad, TEDx IET Lucknow, E-Cell IET Lucknow entries and certifications (India AI Impact Buildathon 2026, Unstop Creative Hackathon, Tata GenAI Forage, Adobe India Hackathon) all match the resume verbatim.
 - `TechStack.tsx` — every skill listed matches the resume's skills section.
 - `Philosophy.tsx` — opinion statements, not factual data; no resume correlation required.
 - `Nav.tsx` — pure navigation.
@@ -145,8 +165,9 @@ The intro line below the section heading currently reads `Applied AI builds focu
 - `npm run dev` — site renders, all four project cards appear, each "GitHub Repo" link opens the correct repository.
 - `npm run build` — production build succeeds with no TypeScript errors.
 - Visual: scan the page at desktop width (>= 1024px) and confirm the 4-card grid lays out cleanly with the existing sketchbook aesthetic (rotations still varied, accent colors still varied).
+- Experience section: confirm three entries (Co-Grad, TEDx IET Lucknow, Novo Technologies) — E-Cell no longer present.
 - Click each project GitHub link, each contact card, and each footer link.
-- `grep` for the old LinkedIn handle (`85bb76298`) and the old project URL slug (`AI-Compliance-Risk-Intelligence-Platform`) — both should return zero matches.
+- `grep` for the old LinkedIn handle (`85bb76298`), the old project URL slug (`AI-Compliance-Risk-Intelligence-Platform`), and the literal `E-Cell` / `E Cell` — all should return zero matches.
 
 ## Out-of-scope follow-ups (not part of this spec)
 
