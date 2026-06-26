@@ -1,47 +1,72 @@
 const projects = [
   {
-    id: "compliance-ai",
+    id: "risklens",
     badge: "MAR 2026",
-    title: "AI Compliance & Risk Intelligence",
-    subtitle: "Full-Stack Regulatory Document Analysis Platform",
+    title: "RiskLens",
+    subtitle: "AI Compliance & Risk Intelligence Platform",
     description:
-      "Built a full-stack compliance intelligence system that processes regulatory and policy documents, runs semantic retrieval, and generates AI-assisted risk insights for enterprise workflows.",
+      "Engineered a production-ready RAG-powered compliance and risk intelligence platform for batch enterprise document analysis, semantic search, risk scoring, and PDF report generation.",
     highlights: [
-      "Implemented document ingestion, chunking, embeddings, and semantic retrieval with RAG.",
-      "Built compliance scoring and risk detection pipeline for multi-page policy PDFs.",
-      "Automated report generation to summarize non-compliance signals and action points.",
+      "Processed 20+ enterprise documents and roughly 200 pages with FAISS vector indexing and all-MiniLM-L6-v2 embeddings.",
+      "Used Groq-hosted LLaMA-3.3-70B with a 9-endpoint FastAPI backend and React/Vite dashboard.",
+      "Reduced compliance review time by 95%, from 45 minutes to under 2 minutes, with about 2s average query latency.",
     ],
     tags: [
       { label: "React", bg: "var(--coral-light)", color: "var(--coral)" },
       { label: "FastAPI", bg: "var(--teal-light)", color: "#006A65" },
-      { label: "LangChain", bg: "var(--indigo-light)", color: "var(--indigo)" },
-      { label: "RAG", bg: "var(--yellow)", color: "var(--ink)" },
+      { label: "FAISS", bg: "var(--indigo-light)", color: "var(--indigo)" },
+      { label: "Groq LLaMA", bg: "var(--yellow)", color: "var(--ink)" },
     ],
     githubUrl: "https://github.com/Viraj1525/AI-Compliance-Risk-Intelligence-Platform",
+    linkLabel: "GitHub Repo",
     rotation: "1deg",
     accentColor: "var(--teal)",
   },
   {
-    id: "medbot",
-    badge: "FEB 2026",
-    title: "Medical RAG Chatbot",
-    subtitle: "Context-Aware Healthcare Document Assistant",
+    id: "hisaabwala",
+    badge: "APR 2026",
+    title: "HisaabWala",
+    subtitle: "Voice-First AI Ledger for Indian SMBs",
     description:
-      "Developed a medical GenAI chatbot to answer domain-specific questions from uploaded healthcare documents using retrieval-augmented generation and vector search.",
+      "Built a voice-to-ledger system that converts Hindi voice inputs into structured business transactions through a Telegram bot, LLM extraction, and Supabase-backed audit trails.",
     highlights: [
-      "Integrated PDF ingestion, chunking, embedding generation, and vector indexing.",
-      "Used LangChain + Groq LLM API + Pinecone for context-grounded responses.",
-      "Delivered an interactive Streamlit interface for practical medical document Q&A.",
+      "Used FastAPI, Groq Whisper, LLaMA-3.3-70B, and Telegram Bot API for voice-first transaction capture.",
+      "Reached 90%+ transcription accuracy on Hindi inputs with multi-transaction NLP extraction and entity resolution.",
+      "Implemented 2-minute auto-confirm, duplicate detection, asyncio scheduling, and zero cross-merchant data leakage.",
     ],
     tags: [
-      { label: "LangChain", bg: "var(--coral-light)", color: "var(--coral)" },
-      { label: "Groq API", bg: "var(--teal-light)", color: "#006A65" },
-      { label: "Pinecone", bg: "var(--indigo-light)", color: "var(--indigo)" },
-      { label: "Streamlit", bg: "var(--yellow)", color: "var(--ink)" },
+      { label: "FastAPI", bg: "var(--coral-light)", color: "var(--coral)" },
+      { label: "Groq Whisper", bg: "var(--teal-light)", color: "#006A65" },
+      { label: "Supabase", bg: "var(--indigo-light)", color: "var(--indigo)" },
+      { label: "Railway", bg: "var(--yellow)", color: "var(--ink)" },
     ],
-    githubUrl: "https://github.com/Viraj1525/Med_Bot",
+    githubUrl: "https://github.com/Viraj1525",
+    linkLabel: "GitHub Profile",
     rotation: "-1.2deg",
     accentColor: "var(--coral)",
+  },
+  {
+    id: "resilient-ai-devops",
+    badge: "2026",
+    title: "Resilient AI DevOps System",
+    subtitle: "Multi-Agent Self-Healing Infrastructure Automation",
+    description:
+      "Built a resilient AI system concept for DevOps workflows where multiple agents coordinate detection, diagnosis, recovery planning, and self-healing automation for operational failures.",
+    highlights: [
+      "Designed around multi-agent coordination for monitoring, triage, remediation, and feedback loops.",
+      "Focuses on self-healing DevOps patterns that reduce manual incident response and improve system resilience.",
+      "Explores AI-assisted operational recovery across failure detection, root-cause reasoning, and automated repair paths.",
+    ],
+    tags: [
+      { label: "Multi-Agent AI", bg: "var(--coral-light)", color: "var(--coral)" },
+      { label: "DevOps", bg: "var(--teal-light)", color: "#006A65" },
+      { label: "Self-Healing", bg: "var(--indigo-light)", color: "var(--indigo)" },
+      { label: "Automation", bg: "var(--yellow)", color: "var(--ink)" },
+    ],
+    githubUrl: "https://github.com/Viraj1525/Resilient-AI-Multi-Agent-Self-Healing-DevOps-System",
+    linkLabel: "GitHub Repo",
+    rotation: "1.2deg",
+    accentColor: "var(--yellow-dark)",
   },
   {
     id: "anpr",
@@ -62,6 +87,7 @@ const projects = [
       { label: "Computer Vision", bg: "var(--yellow)", color: "var(--ink)" },
     ],
     githubUrl: "https://github.com/Viraj1525/Number-Plate-Recognition",
+    linkLabel: "GitHub Repo",
     rotation: "0.8deg",
     accentColor: "var(--indigo)",
   },
@@ -82,7 +108,7 @@ export default function Projects() {
             Project Portfolio
           </h2>
           <p style={{ marginTop: "1rem", maxWidth: 560, margin: "1rem auto 0" }}>
-            Applied AI builds focused on document intelligence, health-tech assistance, and computer vision.
+            Applied AI builds focused on compliance intelligence, voice-first business workflows, resilient DevOps, and computer vision.
           </p>
         </div>
 
@@ -146,7 +172,7 @@ export default function Projects() {
 
               <div style={{ marginBottom: "1rem" }}>
                 <a href={p.githubUrl} target="_blank" rel="noreferrer" className="btn-secondary" style={{ display: "inline-block" }}>
-                  GitHub Repo
+                  {p.linkLabel}
                 </a>
               </div>
 

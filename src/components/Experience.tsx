@@ -1,12 +1,26 @@
 const experiences = [
   {
+    id: "novo",
+    org: "NOVO Technologies",
+    role: "AI Automation Engineer",
+    duration: "Jun 2026 - Present",
+    location: "Noida, Uttar Pradesh",
+    accent: "var(--coral)",
+    bg: "var(--coral-light)",
+    points: [
+      "Architected and developed a full-stack BOQ Automation Platform using Python, FastAPI, React, TypeScript, PostgreSQL, Docker, and REST APIs.",
+      "Reduced BOQ generation time from 2-3 hours to under 15 minutes while eliminating 90%+ manual effort through workflow automation.",
+      "Built PDF/Excel processing, data extraction, validation, approval workflows, RBAC, audit logging, and transaction-safe database operations.",
+    ],
+  },
+  {
     id: "co-grad",
     org: "Co-Grad",
     role: "AI / STEM Trainer",
     duration: "Jan 2026 - Feb 2026",
     location: "Pratapgarh, Uttar Pradesh",
-    accent: "var(--coral)",
-    bg: "var(--coral-light)",
+    accent: "var(--teal)",
+    bg: "var(--teal-light)",
     points: [
       "Mentored 400+ students in Arduino, IoT, Robotics, and 3D Printing through hands-on workshops.",
       "Guided 15+ working projects with 90%+ engagement and 70%+ successful completion.",
@@ -17,35 +31,21 @@ const experiences = [
     id: "tedx",
     org: "TEDx IET Lucknow",
     role: "Operations Head",
-    duration: "Oct 2025 - Present",
+    duration: "Oct 2025 - Jun 2026",
     location: "Lucknow, Uttar Pradesh",
-    accent: "var(--teal)",
-    bg: "var(--teal-light)",
+    accent: "var(--indigo)",
+    bg: "var(--indigo-light)",
     points: [
       "Managed end-to-end conference operations for TEDx events with 30+ team members.",
       "Coordinated onboarding for 10+ speakers and event flow for 300+ attendees.",
       "Delivered 100% on-time execution, 95%+ audience satisfaction, and zero critical operational issues.",
     ],
   },
-  {
-    id: "ecell",
-    org: "E-Cell IET Lucknow",
-    role: "Design Lead",
-    duration: "Nov 2024 - Present",
-    location: "Lucknow, Uttar Pradesh",
-    accent: "var(--indigo)",
-    bg: "var(--indigo-light)",
-    points: [
-      "Led visual branding and media strategy for 10+ entrepreneurship programs and startup events.",
-      "Managed a 10+ member design team and delivered 50+ creatives and campaign assets.",
-      "Scaled outreach 2x, increased participant acquisition by 40%+, and improved engagement by 60%+.",
-    ],
-  },
 ];
 
 const certifications = [
   "India AI Impact Buildathon 2026 (HCL & GUVI)",
-  "Unstop Creative Hackathon - Strategy Track",
+  "Deloitte Australia Technology Job Simulation",
   "Tata GenAI Powered Data Analytics Job Simulation (Forage)",
   "Adobe India Hackathon",
 ];
@@ -57,10 +57,10 @@ export default function Experience() {
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
           <span className="section-label">experience</span>
           <h2 className="doodle-underline-teal" style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", display: "inline-block" }}>
-            Leadership + Execution
+            Automation + Execution
           </h2>
           <p style={{ marginTop: "1rem", maxWidth: 600, margin: "1rem auto 0" }}>
-            Roles where I led teams, shipped outcomes, and turned ideas into measurable results.
+            Roles where I built AI systems, taught applied engineering, and led measurable event operations.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function Experience() {
           {experiences.map((exp, i) => (
             <article
               key={exp.id}
-              className={`animate-fade-up delay-${(i + 1) * 100 as 100 | 200 | 300}`}
+              className={`animate-fade-up delay-${(i + 1) * 100 as 100 | 200 | 300 | 400}`}
               style={{
                 background: exp.bg,
                 border: `2px solid ${exp.accent}`,

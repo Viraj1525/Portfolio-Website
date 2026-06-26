@@ -30,6 +30,7 @@ export default function Footer() {
           {[
             { label: "GitHub", href: "https://github.com/Viraj1525" },
             { label: "LinkedIn", href: "https://www.linkedin.com/in/viraj-agrawal-85bb76298" },
+            { label: "Resume", href: "/Viraj_Resume.pdf" },
             { label: "Email", href: "mailto:virajagrawal.1525@gmail.com" },
           ].map((l) => (
             <a

@@ -2,25 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Viraj Agrawal | AI Systems Engineer",
+  title: "Viraj Agrawal | AI Automation Engineer",
   description:
-    "Portfolio of Viraj Agrawal, a CS student designing AI systems that move beyond prototypes toward real-world utility.",
+    "Portfolio of Viraj Agrawal, an AI Automation Engineer and CSE student building RAG, document intelligence, and full-stack automation systems.",
   keywords: [
     "Viraj Agrawal",
-    "AI Engineer",
+    "AI Automation Engineer",
     "Portfolio",
     "RAG pipelines",
     "LLM",
+    "Document Intelligence",
     "Backend",
     "Next.js",
     "FastAPI",
-    "LangChain",
+    "React",
+    "PostgreSQL",
   ],
   authors: [{ name: "Viraj Agrawal" }],
   openGraph: {
-    title: "Viraj Agrawal | AI Systems Engineer",
+    title: "Viraj Agrawal | AI Automation Engineer",
     description:
-      "Designing AI systems that move beyond prototypes toward real-world utility.",
+      "Building RAG, document intelligence, and full-stack automation systems.",
     type: "website",
     locale: "en_US",
   },

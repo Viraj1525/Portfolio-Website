@@ -2,12 +2,12 @@ const groups = [
   {
     label: "Languages",
     color: "coral" as const,
-    skills: ["Python", "C", "C++", "HTML", "CSS"],
+    skills: ["Python", "JavaScript", "TypeScript", "C", "C++", "HTML", "CSS"],
   },
   {
     label: "AI / ML",
     color: "teal" as const,
-    skills: ["Generative AI", "LLMs", "RAG", "LangChain", "Hugging Face", "PyTorch"],
+    skills: ["Generative AI", "LLMs", "RAG", "Prompt Engineering", "NLP", "LangChain", "Hugging Face Transformers", "PyTorch"],
   },
   {
     label: "Computer Vision",
@@ -15,14 +15,14 @@ const groups = [
     skills: ["YOLOv8", "OpenCV", "EasyOCR"],
   },
   {
-    label: "Backend + Data",
+    label: "Frontend + Backend",
     color: "coral" as const,
-    skills: ["FastAPI", "REST APIs", "Pinecone", "Semantic Search", "NumPy", "Pandas"],
+    skills: ["React", "Vite", "FastAPI", "REST APIs", "PostgreSQL", "Supabase", "FAISS", "Pinecone"],
   },
   {
-    label: "Tools",
+    label: "DevOps + Data",
     color: "teal" as const,
-    skills: ["Streamlit", "Git", "GitHub", "Vector Embeddings"],
+    skills: ["Docker", "Railway", "Streamlit", "NumPy", "Pandas", "Git", "GitHub"],
   },
 ];
 
@@ -41,7 +41,7 @@ export default function TechStack() {
             Core Toolkit
           </h2>
           <p style={{ marginTop: "1rem", maxWidth: 580, margin: "1rem auto 0" }}>
-            Skills and frameworks currently used across AI apps, backend systems, and document intelligence pipelines.
+            Skills and frameworks currently used across AI automation, RAG systems, full-stack products, and deployment workflows.
           </p>
         </div>
 

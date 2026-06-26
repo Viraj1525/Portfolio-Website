@@ -96,7 +96,7 @@ export default function Hero() {
             </h1>
 
             <p className="animate-fade-up delay-200" style={{ color: "var(--ink)", marginBottom: "0.6rem", fontWeight: 600 }}>
-              B.Tech CSE | IET Lucknow
+              AI Automation Engineer at NOVO Technologies | B.Tech CSE, IET Lucknow
             </p>
 
             <p
@@ -110,10 +110,10 @@ export default function Hero() {
                 fontWeight: 400,
               }}
             >
-              Building practical AI systems with
+              Building production-minded AI automation systems with
               <span style={{ fontFamily: "var(--font-hand)", color: "var(--coral)", fontWeight: 700, fontSize: "1.1em" }}>
                 {" "}
-                RAG, LLM pipelines, and full-stack engineering.
+                RAG, document intelligence, FastAPI, React, and workflow orchestration.
               </span>
             </p>
 
@@ -124,13 +124,16 @@ export default function Hero() {
               <a href="#experience" className="btn-secondary" id="hero-experience">
                 View Experience
               </a>
+              <a href="/Viraj_Resume.pdf" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+                Resume PDF
+              </a>
             </div>
 
             <div className="animate-fade-up delay-500" style={{ display: "flex", gap: "0.65rem", marginTop: "2rem", flexWrap: "wrap" }}>
               {[
-                { label: "Generative AI", color: "var(--coral-light)", border: "var(--coral)" },
-                { label: "FastAPI + REST", color: "var(--teal-light)", border: "var(--teal)" },
-                { label: "LangChain + RAG", color: "var(--indigo-light)", border: "var(--indigo)" },
+                { label: "AI Automation", color: "var(--coral-light)", border: "var(--coral)" },
+                { label: "FastAPI + React", color: "var(--teal-light)", border: "var(--teal)" },
+                { label: "RAG + Document Intelligence", color: "var(--indigo-light)", border: "var(--indigo)" },
               ].map((b) => (
                 <div
                   key={b.label}

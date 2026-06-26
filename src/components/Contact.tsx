@@ -71,7 +71,7 @@ export default function Contact() {
             Let&apos;s Build Something Useful
           </h2>
           <p style={{ color: "rgba(250,250,247,0.55)", maxWidth: 560, margin: "1.5rem auto 0", lineHeight: 1.7 }}>
-            Open to internships, project collaborations, and AI/backend opportunities. Based in Lucknow, Uttar Pradesh.
+            Open to AI automation, full-stack engineering, and document intelligence opportunities. Based in Lucknow, Uttar Pradesh.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export default function Contact() {
         <div style={{ textAlign: "center", padding: "2rem", borderTop: "2px dashed rgba(250,250,247,0.12)" }}>
           <p style={{ fontFamily: "var(--font-hand)", fontSize: "1.1rem", color: "rgba(250,250,247,0.5)", marginBottom: "0.5rem" }}>Currently focusing on -&gt;</p>
           <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "0.75rem" }}>
-            {["AI compliance systems", "Medical RAG assistants", "Production-grade FastAPI services"].map((d) => (
+            {["BOQ automation", "Compliance RAG systems", "Voice-first business tools"].map((d) => (
               <span
                 key={d}
                 style={{
